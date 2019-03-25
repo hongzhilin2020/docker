@@ -4,7 +4,7 @@ services:
    web_server:
      build:
        context: https://github.com/qiubin8888/docker.git#:lamp
-       container_name: lamp
-       volumes:
-         - ${PWD}:/var/lib/mysql
-       restart: always
+     container_name: lamp
+     volumes:
+       - ${PWD}:/var/lib/mysql
+     restart: always
