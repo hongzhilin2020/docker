@@ -1,7 +1,7 @@
 version: "3"
 services:
 
-   lamp:
+   web_server:
      build:
        context: https://github.com/qiubin8888/docker.git#:lamp
        container_name: lamp
