@@ -8,4 +8,7 @@ services:
      volumes:
        - ${PWD}/database:/var/lib/mysql
        - ${PWD}:/app
+     ports:
+       - "3306:3306"
+       - "80:80"
      restart: always
