@@ -1,8 +1,7 @@
 FROM mattrayner/lamp:latest-1604-php7
 MAINTAINER qiubin <qiubin_2003@qq.com>
 
-USER root
-RUN sed -i 's/bind-address=0.0.0.0/bind-address=127.0.0.1/g' /etc/mysql/conf.d/mysqld_innodb.cnf
+RUN rm -fr /etc/mysql/mysql.conf.d/mysqld.cnf
 # RUN sed -i 's/\/var\/www\/html/\/var\/www\/html\/public/g' /etc/apache2/sites-available/000-default.conf
 
 CMD ["/run.sh"]
